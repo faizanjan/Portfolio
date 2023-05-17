@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@600&family=Poppins:ital,wght@0,400;0,500;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles1.css" />
+    <link rel="stylesheet" href="./styles/styles2.css" />
+    <link rel="stylesheet" href="./styles/styles3.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <aside>
+      <!-- Profile -->
+      <div class="aside-item bg-white" id="profile">
+        <img
+          class="profile-item"
+          id="profile-img"
+          src="images/profile-picture.jpeg"
+          alt=""
+        />
+
+
+        <div id="profile-body">
+          <div id="name-container">
+            <h3 class="profile-item" id="name">Faizan Jan</h3>
+            <p class="profile-item" id="role">Software Engineer</p>
+          </div>
+  
+          <div class="profile-item" id="contacts">
+            <i class="fa-solid fa-envelope"></i> 
+            &nbsp;
+            <a id="email" href="mailto:faizan.jan.24.1@mountblue.tech"
+              >faizan.jan.24.1@mountblue.tech</a
+            >
+            <br />
+            <i class="fa-solid fa-phone"></i> 
+            &nbsp;
+            <span id="mobile">+91 77808 26475</span>
+            <br/>
+            <i class="fa-brands fa-linkedin"></i>
+            &nbsp;
+            <a id="linkedin" href="https://www.linkedin.com/in/faizanjan/">LinkedIn</a>
+          </div>
+  
+          <span class="profile-item" id="about"
+            >Self-motivated developer, who is willing to learn and create
+            outstanding UI applications.</span
+          >
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div class="aside-item bg-white" id="experience">
+        <h2>Experiences</h2>
+
+        <div id="exp-card-container">
+          <div class="exp-card">
+            <div class="company-logo">
+              <img
+                src="https://s3.ap-southeast-1.amazonaws.com/cdn.elitmus.com/lp19u9moonqa3u6oodqt0h117mt7"
+                alt=""
+              />
+            </div>
+            <div class="exp-body">
+              <p class="exp-duration">April 2023 - Current</p>
+              <h4 class="exp-role">Software Engineer</h4>
+              <p class="exp-details">
+                Donec aliquam est dui, vel vestibulum diam sollicitudin id.
+                Quisque feugiat malesuada molestie.
+              </p>
+            </div>
+          </div>
+
+          <div class="exp-card">
+            <div class="company-logo">
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/004/263/114/original/meta-logo-meta-by-facebook-icon-editorial-logo-for-social-media-free-vector.jpg"
+                alt=""
+              />
+            </div>
+            <div class="exp-body">
+              <p class="exp-duration">May 2022 - Apr 2023</p>
+              <h4 class="exp-role">Front-End Developer</h4>
+              <p class="exp-details">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
+                quaerat officia non exercitationem hic soluta optio possimus vel
+                aliquam.
+              </p>
+            </div>
+          </div>
+
+          <div class="exp-card">
+            <div class="company-logo">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAA81BMVEX////qQzX7vAU0qFNChfQ8gvR2ovb7uADqPi/7ugB+pvf+vADqQDb7vgFChPcuqFQ0qU9Bh+zpNyb6tgklpEktfPP1tLD1r6vrSTvpLBf3xsP63dv//PX/9+j8x0cpevPyuw3b7d9dtnP+9PP97Ov4zszym5bwh4Dvd2/ub2b75OPpOSntaF7oKhPrUETsXFHwg3z81X795rb7xDn94KP80XH+8db81oSduvisxfnp7/3+8NPa5fz+68fO3PxelPXD4cl9wo2w2LkPoT6GxpRQsWiazqZtvIDr9e3925bA0/v09/7y+uw+iOaHrfexyfphs2Usd9UfAAAEPUlEQVR4nO3b61baQBQFYCAiQduKMQgBAcELIEStaL3UVkgUaO3t/Z+mJAjCCSRckpmVZH+/7ErsOuw1M5kzxEgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACBUjk/2T6u1er1eq57unxzzLoe5s0xNUiSpIQ41pMG/apkz3mWxc3yaVSQxSomSkj0Nx3DINdWG5fOPNNRmjneBnsudK9YRMDUalPNgp5C/cEhgmMJFnneh3qmqzgmYKahV3qV6JB+dvw5QjWggh0JGXTgBg5rhXbD7LpWlIohGlUveJbutKS0ZQTQqNXkX7a6LxZeCiRDqvMt2U2sv+mHpCMTsEe+6XVRMflw+hGBF8DkRi80LwWyZgh/B1SCCWSEMeiQ126xd1ppZ1dJDBSuCghmBJQRJrWfe90H5TF2VAhtBpJWMWUOQxAz9kEcZUQpoBNdvw2AyhIa0P/PefakRxAgO3iMYh2CzAzR3kwGLIHKTjJEQRMXufCCniEGLoLAXi02HIIr2p4ZnjYBFQIaBGYLTieFxwI4Up1YDU7LAuybWftAMEl94l8RcjEyFxDXvipj7SoZBssW7IvZu6TAI30ygUyF5w7sg9gpkKiRC90wYNc3vw6DIuyAOyHKQuLK9+27Tzj2jmt1WnM5g78D27q103MYTo5rdRlZEhwfjVnzDRpxNyW4jG+Xkrf3t9hmU2NTsNvJYcNoj2meQfmBTtMvILjHxzf52hwwe2RTtsm8kA4dNokMG39kU7TKagcMOCRmEJIMwzgWsiXg2GrBHimCvbFinZ6IR+LVnWqd3fiIZ3DGq2W3rnKFsTo+E9E/PqvTWGmdpDyWyJPrzsRBZ50yVLpC7HlbprZXP1ukw8O1ysMZ3LE9kGPh0l2ha8bu2+zTdHnhcp5dW+871kcyEjbhfT5UNK333/moZBaVXBrV6xvIOxvZh3+FXfv3+RIfBHya1eoW+i7N9mNqxD6Gf2tklIfh3czA0PRCMCAS9bXN/WxdoCD4fBmRFMCMQBL0z9/aOPrhOQkj7ejUwTLyjuX0oGBEIgixrM+/VZNm8PhVC+i/jij0wfld3HIGRgtCly0K/K8ijyylhHIJvu+ZJo85pMgIjBb2ilcc3lbWKLk9cfQ/Bp4doxLCFJhEMp4QuVHqdXkXQZZlcG02Hkl+bZsL4G44ZEQw/q2HmBTOEtH+bJaKYnBeBDSOE+Cbv0t3TWj4Cc00Iwno49o/O90XIFd5lu6uyfAhBi+BtB7gMm92kb2nLhaDP3kr6XFlYfD7IQtn5P/Sl50WHgv7Mu1TvlF8WSUF/CeogGGo7pqC/tHkX6bn2dHdE1gG90uZdIBODLlmXrU1CatBCWTrqAOtrPXnQLMpmFCnjB13uaSEK4E2/rXU7vV6l1+t0tXb4Pj8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhNx/XYltNiv7mm8AAAAASUVORK5CYII="
+                alt=""
+              />
+            </div>
+            <div class="exp-body">
+              <p class="exp-duration">Dec 2021 - May 2022</p>
+              <h4 class="exp-role">Full Stack Developer</h4>
+              <p class="exp-details">
+                Lorem ipsum dolor sit amet, tempore ex esse atque earum
+                praesentium aspernatur mollitia ut illo, maxime culpa! Sapiente,
+                non.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hobbies -->
+      <div class="aside-item bg-white" id="hobbies">
+        <h2>Hobbies</h2>
+
+        <div id="hobbies-card-container">
+          <div class="hobbies-card">
+            <div id="gaming-img" class="hobby-img"></div>
+            <h3 class="hobby-name">Gaming</h3>
+            <p class="hobby-detail">Quisque feugiat malesuada molestie.</p>
+          </div>
+
+          <div class="hobbies-card">
+            <div id="cooking-img" class="hobby-img"></div>
+            <h3 class="hobby-name">Cooking</h3>
+            <p class="hobby-detail">Quisque feugiat malesuada molestie.</p>
+          </div>
+
+          <div class="hobbies-card">
+            <div id="biking-img" class="hobby-img"></div>
+            <h3 class="hobby-name">Biking</h3>
+            <p class="hobby-detail">Quisque feugiat malesuada molestie.</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main>
+      <!-- Skills -->
+      <div id="skills">
+        <div class="skill-set bg-white" id="front-end">
+          <h3>Front-End</h3>
+
+          <div class="skill" id="html">
+            <h4>HTML</h4>
+            <div class="skill-progress-container">
+              <div class="skill-progress-bar"></div>
+            </div>
+          </div>
+
+          <div class="skill" id="css">
+            <h4>CSS</h4>
+            <div class="skill-progress-container">
+              <div class="skill-progress-bar"></div>
+            </div>
+          </div>
+
+          <div class="skill" id="bootstrap">
+            <h4>Bootstrap</h4>
+            <div class="skill-progress-container">
+              <div class="skill-progress-bar"></div>
+            </div>
+          </div>
+
+          <div class="skill" id="javascript">
+            <h4>JavaScript</h4>
+            <div class="skill-progress-container">
+              <div class="skill-progress-bar"></div>
+            </div>
+          </div>
+
+          <div class="skill" id="react">
+            <h4>React</h4>
+            <div class="skill-progress-container">
+              <div class="skill-progress-bar"></div>
+            </div>
+          </div>
+
+          <div class="skill" id="redux">
+            <h4>Redux</h4>
+            <div class="skill-progress-container">
+              <div class="skill-progress-bar"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-set bg-white" id="front-end">
+          <h3>Back-End</h3>
+
+          <div class="skill" id="sql">
+            <h4>SQL</h4>
+            <div class="skill-progress-container">
+              <div class="skill-progress-bar"></div>
+            </div>
+          </div>
+
+          <div class="skill" id="http">
+            <h4>HTTP</h4>
+            <div class="skill-progress-container">
+              <div class="skill-progress-bar"></div>
+            </div>
+          </div>
+
+          <div class="skill" id="express">
+            <h4>Express.js</h4>
+            <div class="skill-progress-container">
+              <div class="skill-progress-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div id="projects">
+        <div id="project-heading" class="bg-white">
+          <h2>Projects (3)</h2>
+        </div>
+
+        <div class="project-card bg-white">
+          <div class="project-img">
+            <img src="images/mp3-player.png" alt="" />
+          </div>
+          <div class="project-body">
+            <div class="project-tags project-body-item">#HTML #CSS #Responsive</div>
+            <div class="project-name project-body-item">MP3 Player</div>
+            <p class="project-details project-body-item">
+              In this project, I worked with HTML and CSS to create a responsive
+              page. The aim was to make the design for a typical modern music
+              player app. <br />
+              Donec aliquam est dui, vel vestibulum diam sollicitudin id.
+              Quisque feugiat malesuada molestie.
+            </p>
+            <div class="project-links project-body-item">
+              <a href="https://t2hsw1.csb.app/">
+                <button class="demo-btn">Demo</button>
+              </a>
+              <a href="https://codesandbox.io/s/t2hsw1">
+                <button class="code-btn">Code</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card bg-white">
+          <div class="project-img"><img src="images/edie.png" alt="" /></div>
+          <div class="project-body">
+            <div class="project-tags project-body-item">#HTML #CSS #Responsive</div>
+            <div class="project-name project-body-item">Edie Home Page</div>
+            <p class="project-details project-body-item">
+              In this project, I worked with HTML and CSS to create a responsive
+              page. This application/site was created as a submission to a
+              DevChallenges challenge. The challenge was to build an application
+              to complete the given user stories.
+            </p>
+            <div class="project-links project-body-item">
+              <a href="https://czqq1t.csb.app/">
+                <button class="demo-btn">Demo</button>
+              </a>
+              <a href="https://codesandbox.io/s/czqq1t">
+                <button class="code-btn">Code</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card bg-white">
+          <div class="project-img"><img src="images/myTeam.png" alt="" /></div>
+          <div class="project-body">
+            <div class="project-tags project-body-item">#HTML #CSS #Responsive</div>
+            <div class="project-name project-body-item">My Team Page</div>
+            <p class="project-details project-body-item">
+              In this project, I worked with HTML and CSS to create a responsive
+              page. This application/site was created as a submission to a
+              DevChallenges challenge. The challenge was to build an application
+              to complete the given user stories.
+            </p>
+            <div class="project-links project-body-item">
+              <a href="https://rnvygf.csb.app/">
+                <button class="demo-btn">Demo</button>
+              </a>
+              <a href="https://codesandbox.io/s/rnvygf">
+                <button class="code-btn">Code</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="blogs">
+        <div id="blog-heading" class="bg-white">
+          <h2>Blogs (1)</h2>
+        </div>
+
+        <div class="blog-card bg-white">
+          <div class="blog-img"><img src="images/blog.png" alt="" /></div>
+          <div class="blog-body">
+            <div class="blog-tag blog-body-item">Blog</div>
+            <div class="blog-name blog-body-item">A step-by-step walk through of your first HTML page</div>
+            <p class="blog-details blog-body-item">
+              Through this article, we aim to give you the essential HTML building blocks that will help you get up and running. Reading this, you will be able to understand an HTML source code and even modify it for your own good!
+            </p>
+            <a href="https://9glebh.csb.app/" class="blog-link blog-body-item">blog.faizanjan.in</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/a1085fbeac.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
