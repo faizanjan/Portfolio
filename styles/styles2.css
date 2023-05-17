@@ -1,63 +1,66 @@
-@media screen and (max-width:1150px) {
-    body{
-        flex-direction: column;
+@media screen and (max-width: 1150px) {
+    body {
+      flex-direction: column;
     }
-
-    aside{
-        width:100%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center ;
+  
+    aside {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
     }
-
-    main{
-        width:90%;
-        margin: auto;
-        justify-content: space-between;
-        padding: 50px 0;
+  
+    main {
+      width: 90%;
+      margin: auto;
+      justify-content: space-between;
+      padding: 50px 0;
     }
-
-    .aside-item{
-        width:40%;
+  
+    .aside-item {
+      width: 40%;
     }
-
-
+  
+    #about {
+      padding-right: 20px;
+    }
+  
     /* profile */
-    #profile{
-        width:90%;
-        flex-direction: row;
+    #profile {
+      width: 90%;
+      flex-direction: row;
     }
-
-    #profile-img{
-        width:40%;
-        border-radius: 50%;
-        box-shadow: 0 0px 40px 10px rgba(0, 0, 0, 0.252);
+  
+    #profile-img {
+      width: 40%;
+      border-radius: 50%;
+      box-shadow: 0 0px 40px 10px rgba(0, 0, 0, 0.252);
     }
-
-    .profile-item{
-        margin:30px;
+  
+    .profile-item {
+      margin: 30px;
     }
-
+  
     /* experiencce */
-    #experience-card{
-        height: fit-content;
+    #experience-card {
+      height: fit-content;
     }
-
+  
     /* skills */
-    #skills{
-        align-items: center;
+    #skills {
+      align-items: center;
     }
-    
+  
     /* misc */
-    #project-heading, 
+    #project-heading,
     .project-card,
     #blog-heading,
-    .blog-card{
-        margin-bottom: -40px;
+    .blog-card {
+      margin-bottom: -40px;
     }
-    
-    #blog-heading{
-        margin-top: 80px;
+  
+    #blog-heading {
+      margin-top: 80px;
     }
-
-}
+  }
+  

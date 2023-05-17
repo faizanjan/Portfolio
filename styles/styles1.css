@@ -1,499 +1,515 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
-}
-
-body{
+  }
+  
+  body {
     display: flex;
     flex-direction: row;
     background-color: #f2f2f2;
-}
-
-.bg-white{
+  }
+  
+  .bg-white {
     background-color: white;
     margin-top: 50px;
     box-shadow: 0px 5px 40px rgba(51, 51, 51, 0.3);
     border-radius: 18px;
-}
-/************************* ASIDE ***********************/
-
-aside{
-    width:35%;
+  }
+  /************************* ASIDE ***********************/
+  
+  aside {
+    width: 35%;
     display: flex;
     flex-direction: column;
-}
-
-.aside-item{
+  }
+  
+  .aside-item {
     width: 85%;
     margin: 20px auto;
     border-radius: 18px;
-}
-
-/* Profile */
-#profile{
+  }
+  
+  /* Profile */
+  #profile {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px 0;
-}
-
-.profile-item{
+  }
+  
+  .profile-item {
     width: 90%;
     margin: 15px auto;
-}
-
-#profile-img{
+  }
+  
+  #profile-img {
     border-radius: 18px;
-}
-
-#name-container{
+  }
+  
+  #name-container {
     width: 100%;
-}
-
-#name{
-    font-family: 'Montserrat';
+  }
+  
+  #name {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 2rem;
     line-height: 1.2rem;
-    color: #4F4F4F;
+    color: #4f4f4f;
     margin-bottom: -5px;
-}
-
-#role{
-    font-family: 'Montserrat';
+  }
+  
+  #role {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 1.2rem;
     line-height: 1.2rem;
     color: #828282;
-}
-
-#contacts{
-    color: #4F4F4F;
-}
-
-#email, #mobile, #linkedin{
-    font-family: 'Montserrat';
+  }
+  
+  #contacts {
+    color: #4f4f4f;
+  }
+  
+  #email,
+  #mobile,
+  #linkedin {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 0.8rem;
     line-height: 0.8rem;
-    color: #4F4F4F;
+    color: #4f4f4f;
     margin: 5px auto;
     display: inline-block;
     text-decoration: none;
-}
-
-#email{
+  }
+  
+  #email {
     text-decoration: none;
-}
-
-#about{
-    font-family: 'Montserrat';
+  }
+  
+  #about {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 1rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
     color: #828282;
     display: block;
-}
-
-/* Experience */
-
-#experience, #hobbies{
+  }
+  
+  /* Experience */
+  
+  #experience,
+  #hobbies {
     padding: 30px 0px;
-}
-
-#experience h2, #hobbies h2{
-    font-family: 'Montserrat';
+  }
+  
+  #experience h2,
+  #hobbies h2 {
+    font-family: "Montserrat";
     font-style: normal;
     font-size: 1.7em;
     line-height: 1.5em;
-    color: #4F4F4F;
-    margin: 0 20px
-}
-.exp-card{
+    color: #4f4f4f;
+    margin: 0 20px;
+  }
+  .exp-card {
     width: 90%;
     display: flex;
     align-items: center;
-    margin:30px auto;
+    margin: 30px auto;
     transition: all 0.4s ease-in-out;
     padding: 20px;
-}
-.exp-card:hover{
+  }
+  .exp-card:hover {
     box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.3);
     border-radius: 20px;
-}
-
-.company-logo{
-    width:25%;
+  }
+  
+  .company-logo {
+    width: 25%;
     margin-right: 30px;
-}
-
-.company-logo img{
+  }
+  
+  .company-logo img {
     width: 100%;
-}
-
-.exp-body{
-    width:70%;
+  }
+  
+  .exp-body {
+    width: 70%;
     margin: auto;
-}
-
-.exp-duration{
-    font-family: 'Montserrat';
+  }
+  
+  .exp-duration {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 0.7em;
     line-height: 1em;
     color: #828282;
-}
-
-.exp-role{
-    font-family: 'Montserrat';
+  }
+  
+  .exp-role {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 1rem;
     color: #333333;
     margin-bottom: 20px;
     margin-top: 10px;
-}
-
-.exp-details{
-    font-family: 'Montserrat';
+  }
+  
+  .exp-details {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 0.8rem;
     line-height: 1rem;
     color: #828282;
-}
-
-/* Hobbies */
-
-.hobbies-card{
-    width:90%;
+  }
+  
+  /* Hobbies */
+  
+  .hobbies-card {
+    width: 90%;
     border-radius: 12px;
-    margin:40px auto;
-}
-
-.hobby-img{
+    margin: 40px auto;
+  }
+  
+  .hobby-img {
     height: 180px;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
-    width:100%;
+    width: 100%;
     border-radius: 12px;
     background-position: 0%;
     transition: all 0.5s;
     /* aspect-ratio: 2; */
     /* object-fit: contain; */
     /* background-blend-mode: color-burn; */
-}
-.hobby-img:hover{
+  }
+  .hobby-img:hover {
     background-position: 50px;
-}
-#gaming-img{
-    background-image:linear-gradient(rgba(205, 198, 198, 0.3),rgba(155, 134, 134, 0.46)),url(https://i.pcmag.com/imagery/articles/00DDUM2F1UuVX1ciAvfJqM3-9..v1623763322.jpg);
-}
-#cooking-img{
-    background-image:linear-gradient(rgba(205, 198, 198, 0.3),rgba(155, 134, 134, 0.46)),url(https://t4.ftcdn.net/jpg/04/95/20/15/360_F_495201500_KFoAy9E0iSMI9pJlkfadBUi7eqfIsrf9.jpg);
-}
-#biking-img{
-    background-image:linear-gradient(rgba(205, 198, 198, 0.3),rgba(155, 134, 134, 0.46)),url(https://as1.ftcdn.net/v2/jpg/02/51/83/70/500_F_251837085_YvUWs0oCoVchmRIEySHOCJxoQbn8IT6g.jpg);
-}
-
-.hobby-img img{
+  }
+  #gaming-img {
+    background-image: linear-gradient(
+        rgba(205, 198, 198, 0.3),
+        rgba(155, 134, 134, 0.46)
+      ),
+      url(https://i.pcmag.com/imagery/articles/00DDUM2F1UuVX1ciAvfJqM3-9..v1623763322.jpg);
+  }
+  #cooking-img {
+    background-image: linear-gradient(
+        rgba(205, 198, 198, 0.3),
+        rgba(155, 134, 134, 0.46)
+      ),
+      url(https://t4.ftcdn.net/jpg/04/95/20/15/360_F_495201500_KFoAy9E0iSMI9pJlkfadBUi7eqfIsrf9.jpg);
+  }
+  #biking-img {
+    background-image: linear-gradient(
+        rgba(205, 198, 198, 0.3),
+        rgba(155, 134, 134, 0.46)
+      ),
+      url(https://as1.ftcdn.net/v2/jpg/02/51/83/70/500_F_251837085_YvUWs0oCoVchmRIEySHOCJxoQbn8IT6g.jpg);
+  }
+  
+  .hobby-img img {
     width: 100%;
     border-radius: 12px;
-}
-
-.hobby-name{
-    font-family: 'Montserrat';
+  }
+  
+  .hobby-name {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 1.2rem;
     line-height: 1.5rem;
     color: #333333;
-    margin: 15px 0;;
-}
-
-.hobby-detail{
-    font-family: 'Montserrat';
+    margin: 15px 0;
+  }
+  
+  .hobby-detail {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.5rem;
     color: #828282;
-}
-
-/********************* MAIN **********************/
-
-main{
+  }
+  
+  /********************* MAIN **********************/
+  
+  main {
     width: 60%;
     padding: 25px 0;
-}
-
-#skills{
+  }
+  
+  #skills {
     margin-top: -50px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-}
-
-.skill-set{
+  }
+  
+  .skill-set {
     width: 48%;
     display: flex;
     flex-direction: column;
     /* margin: 0 20px; */
     border-radius: 12px;
-    padding:0 20px 20px;
-}
-
-.skill-set h3{
-    font-family: 'Montserrat';
+    padding: 0 20px 20px;
+  }
+  
+  .skill-set h3 {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
     font-size: 1.1rem;
     line-height: 1.5rem;
     text-transform: uppercase;
-    color: #4F4F4F;
+    color: #4f4f4f;
     margin: 20px 0;
-}
-
-.skill{
+  }
+  
+  .skill {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 8px 0;
-}
-
-.skill h4{
-    font-family: 'Montserrat';
+  }
+  
+  .skill h4 {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 0.9rem;
     line-height: 1.1rem;
-    color: #4F4F4F;
-}
-
-.skill-progress-container{
-    background: #C4C4C4;
+    color: #4f4f4f;
+  }
+  
+  .skill-progress-container {
+    background: #c4c4c4;
     border-radius: 12px;
     width: 60%;
     height: 10px;
-
-}
-
-.skill-progress-bar{
-    background: #2F80ED;
+  }
+  
+  .skill-progress-bar {
+    background: #2f80ed;
     border-radius: 12px;
     width: 80%;
-    height: 10px
-}
-
-#html .skill-progress-bar{
-    width: 80% ;
-}
-#css .skill-progress-bar{
-    width: 65% ;
-}
-#bootstrap .skill-progress-bar{
-    width: 50% ;
-}
-#javascript .skill-progress-bar{
-    width: 70% ;
-}
-#react .skill-progress-bar{
-    width: 65% ;
-}
-#redux .skill-progress-bar{
-    width: 50% ;
-}
-#sql .skill-progress-bar{
+    height: 10px;
+  }
+  
+  #html .skill-progress-bar {
+    width: 80%;
+  }
+  #css .skill-progress-bar {
+    width: 65%;
+  }
+  #bootstrap .skill-progress-bar {
+    width: 50%;
+  }
+  #javascript .skill-progress-bar {
+    width: 70%;
+  }
+  #react .skill-progress-bar {
+    width: 65%;
+  }
+  #redux .skill-progress-bar {
+    width: 50%;
+  }
+  #sql .skill-progress-bar {
     width: 35%;
-}
-#http .skill-progress-bar{
+  }
+  #http .skill-progress-bar {
     width: 30%;
-}
-#express .skill-progress-bar{
+  }
+  #express .skill-progress-bar {
     width: 25%;
-}
-
-/* Projects */
-
-#project-heading h2, #blog-heading h2{
+  }
+  
+  /* Projects */
+  
+  #project-heading h2,
+  #blog-heading h2 {
     padding: 20px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 1.2rem;
     line-height: 1.5rem;
-    color: #4F4F4F;
+    color: #4f4f4f;
     height: 70px;
     display: flex;
     align-items: center;
-}
-
-.project-card{
+  }
+  
+  .project-card {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
-}
-
-.project-img{
-    width:40%;
+  }
+  
+  .project-img {
+    width: 40%;
     margin: 20px;
     overflow: hidden;
     border-radius: 18px;
-}
-
-.project-img img{
+  }
+  
+  .project-img img {
     width: 100%;
     object-fit: contain;
     align-items: center;
     border-radius: 18px;
-}
-
-.project-body{
-    width:60%;
+  }
+  
+  .project-body {
+    width: 60%;
     margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.project-body-item, .blog-body-item{
+  }
+  
+  .project-body-item,
+  .blog-body-item {
     margin: 20px;
-}
-
-.project-tags{
-    font-family: 'Montserrat';
+  }
+  
+  .project-tags {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.4rem;
     color: #4f4f4fd6;
-}
-
-.project-name{
-    font-family: 'Montserrat';
+  }
+  
+  .project-name {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 1.8rem;
     color: #333333;
-}
-
-.project-details{
-    font-family: 'Montserrat';
+  }
+  
+  .project-details {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 300;
     font-size: 1rem;
     line-height: 1.4rem;
     color: #828282;
-}
-
-.demo-btn{
-    background: #2F80ED;
-    color:white;
+  }
+  
+  .demo-btn {
+    background: #2f80ed;
+    color: white;
     border: none;
     margin-right: 20px;
-}
-
-
-.code-btn{
-    background: #FFFFFF;
-    border: 1px solid #2F80ED;
-    color: #2F80ED;
-}
-
-
-.demo-btn, .code-btn{
-    
+  }
+  
+  .code-btn {
+    background: #ffffff;
+    border: 1px solid #2f80ed;
+    color: #2f80ed;
+  }
+  
+  .demo-btn,
+  .code-btn {
     border-radius: 12px;
     width: 128px;
     height: 50px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 1.1rem;
     line-height: 1.4rem;
     transition: all 0.5s;
-}    
-
-.demo-btn:hover, .code-btn:hover{
+  }
+  
+  .demo-btn:hover,
+  .code-btn:hover {
     background: #000000;
     border: 1px solid #ffffff;
     color: #ffffff;
-}
-
-/* Blogs */
-
-.blog-card{
+  }
+  
+  /* Blogs */
+  
+  .blog-card {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-
-}
-
-.blog-img{
-    width:40%;
+  }
+  
+  .blog-img {
+    width: 40%;
     margin: 20px;
     overflow: hidden;
     border-radius: 18px;
-}
-
-.blog-img img{
+  }
+  
+  .blog-img img {
     width: 100%;
     object-fit: contain;
     border-radius: 18px;
-}
-
-.blog-body{
-    width:50%;
+  }
+  
+  .blog-body {
+    width: 50%;
     margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.blog-tag{
-    font-family: 'Montserrat';
+  }
+  
+  .blog-tag {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.4rem;
-    color: #E0E0E0;
-}
-
-.blog-name{
-    font-family: 'Montserrat';
+    color: #e0e0e0;
+  }
+  
+  .blog-name {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 1.8rem;
     color: #333333;
-}
-
-.blog-details{
-    font-family: 'Montserrat';
+  }
+  
+  .blog-details {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 300;
     font-size: 1rem;
     line-height: 1.4rem;
     color: #828282;
-}
-
-.blog-link{
-    font-family: 'Montserrat';
+  }
+  
+  .blog-link {
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.4rem;
-    color: #2F80ED;
+    color: #2f80ed;
     text-decoration: none;
-}
+  }
+  
